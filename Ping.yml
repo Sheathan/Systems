@@ -2,4 +2,4 @@
 - hosts: all
   tasks:
   - name: Check if Ansible can reach hosts (Windows Only)
-    ansible.windows.win.ping:
+    ansible.windows.win_ping:
