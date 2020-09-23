@@ -1,5 +1,0 @@
----
-- hosts: all
-  tasks:
-  - name: Run Yum Updates
-    ansible.windows.win_updates:
