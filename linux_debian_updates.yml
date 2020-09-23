@@ -2,7 +2,6 @@
 - hosts: all
   tasks:
   - name: Run Apt Updates
-    yum:
-      name: *
-      state: latest
-      exclude: kernel*
+    apt:
+    name: "*"
+    state: latest
