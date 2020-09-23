@@ -3,4 +3,4 @@
   tasks:
   - name: Run Windows Updates
     ansible.windows.win_updates:
-    reboot: yes
+      reboot: yes
