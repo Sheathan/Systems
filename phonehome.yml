@@ -1,5 +1,6 @@
 ---
 - hosts: all
   tasks:
-  - name: Check if Ansible can reach hosts via ssh (Linux Only)
-    ping:
+  - name: Restart EM7 Phone Home Tunnels
+    command:
+      cmd: systemctl restart em7_ph_tunnels
