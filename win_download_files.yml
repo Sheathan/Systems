@@ -5,4 +5,4 @@
   - name: Download files to target Desktop
     win_get_url:
       url: https://logicvein.com/download/exe/VHDX%20SB
-      dest: "C:\Users\Administrator\Desktop\smartbridge.zip"
+      dest: "C:\\Users\\Administrator\\Desktop\\smartbridge.zip"
