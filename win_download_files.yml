@@ -2,8 +2,10 @@
 - hosts: all
   gather_facts: no
   tasks:
-  - name: Download files to target Desktop
+  - name: Make Directory
     win_shell: mkdir "C:\\Hyper-v\\NLD-imported"
+    
+  - name: Download files to target Desktop
     win_get_url:
       url: https://logicvein.com/download/exe/VHDX%20SB
       dest: "C:\\Hyper-v\\NLD-imported\\smartbridge.zip"
