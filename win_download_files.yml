@@ -11,6 +11,4 @@
     win_unzip:
       src: "C:\\Hyper-v\\NLD-imported\\smartbridge.zip"
       dest: "C:\\Hyper-v\\NLD-imported\\"
-       src: "C:\\Hyper-v\\NLD-imported\\VHDX SB\\lvi-bridge-2019.18.0-202010070650-hyperv.zip
-       dest: "C:\\Hyper-v\\NLD-imported\\"
       delete_archive: yes
