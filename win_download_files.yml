@@ -10,9 +10,14 @@
       url: https://logicvein.com/download/exe/VHDX%20SB
       dest: "C:\\Hyper-v\\NLD-imported\\smartbridge.zip"
       
-  - name: Recursively unzip files
+  - name: Unzip files
     win_unzip:
       src: "C:\\Hyper-v\\NLD-imported\\smartbridge.zip"
       dest: "C:\\Hyper-v\\NLD-imported\\"
-      recurse: yes
+      delete_archive: yes
+      
+  - name: Unzip again
+    win_unzip:
+      src: "C:\\Hyper-v\\NLD-imported\\VHDX SB\\lvi-bridge-2019.18.0-202010070650-hyperv.zip
+      dest: "C:\\Hyper-v\\NLD-imported\\"
       delete_archive: yes
