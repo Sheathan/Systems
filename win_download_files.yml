@@ -16,4 +16,3 @@
   - name: Unzip again
     win_unzip:
       src: "C:\\Hyper-v\\NLD-imported\\VHDX SB\\lvi-bridge-2019.18.0-202010070650-hyperv.zip
-      delete_archive: yes
