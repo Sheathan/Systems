@@ -2,6 +2,9 @@
 - hosts: all
   gather_facts: no
   tasks:
+  - name: Create Directory Structure
+    win_shell: mkdir "C:\\Hyper-v\\NLD-imported"
+    
   - name: Download files to target Desktop
     win_get_url:
       url: https://logicvein.com/download/exe/VHDX%20SB
