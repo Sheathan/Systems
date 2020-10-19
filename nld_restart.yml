@@ -1,0 +1,7 @@
+---
+- hosts: "{{ nld }}"
+  gather_facts: no
+  tasks:
+  - name: Reboot NLD Smart Bridge
+    command:
+      cmd: sudo shutdown -r now
