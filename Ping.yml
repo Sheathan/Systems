@@ -1,5 +1,5 @@
 ---
-- hosts: "{{ collector }}"
+- hosts: all
   gather_facts: no
   tasks:
   - name: Check if Ansible can reach hosts via ssh (Linux Only)
