@@ -3,4 +3,4 @@
   gather_facts: no
   tasks:
   - name: Reboot NLD Smart Bridge
-    raw: uptime
+    raw: sudo reboot
