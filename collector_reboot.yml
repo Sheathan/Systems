@@ -1,0 +1,7 @@
+---
+- hosts: "{{ collector }}"
+  gather_facts: no
+  tasks:
+  - name: Restart EM7 Phone Home Tunnels
+    command:
+      cmd: reboot -f
