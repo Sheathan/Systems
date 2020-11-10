@@ -5,7 +5,7 @@
   - name: Ensure user is present on system
     win_user:
       name: svc_slwinrm
-      password: {{ svc_password }}
+      password: "{{ svc_password }}"
       state: present
       groups:
         - Administrators
