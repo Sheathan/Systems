@@ -2,5 +2,10 @@
 - hosts: all
   gather_facts: no
   tasks:
-  - name: Check if Ansible can reach hosts (Windows Only)
-    ansible.windows.win_ping:
+  - name: Ensure user is present on system
+    win_user:
+      name: svc_slwinrm
+      password: {{ svc_password }}
+      state: present
+      groups:
+        - Administrators
