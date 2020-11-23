@@ -4,4 +4,4 @@
   tasks:
   - name: Reboot Collector
     reboot:
-      - msg: "Reboot initiated by Ansible"
+      msg: "Reboot initiated by Ansible"
