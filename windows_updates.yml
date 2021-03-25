@@ -3,4 +3,12 @@
   tasks:
   - name: Run Windows Updates
     ansible.windows.win_updates:
+      category_names:
+        - Updates
+        - DefinitionUpdates
+        - FeaturePacks
+        - SecurityUpdates
+        - CriticalUpdates
+        - UpdateRollups
       reboot: yes
+      reboot_timeout: 3600
