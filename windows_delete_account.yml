@@ -10,3 +10,15 @@
     win_user:
         name: allianttemp
         state: absent
+  - name: Delete allianttemp2 if it exists
+    win_user:
+        name: allianttemp2
+        state: absent
+  - name: Delete allianttemp3 if it exists
+    win_user:
+        name: allianttemp3
+        state: absent
+  - name: Delete allianttemp4 if it exists
+    win_user:
+        name: allianttemp4
+        state: absent
