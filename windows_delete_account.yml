@@ -2,10 +2,11 @@
 - hosts: all
   gather_facts: no
   tasks:
-  - name: Delete accounts if they exist
+  - name: Delete allianttech if it exists
     win_user:
         name: allianttech
         state: absent
+  - name: Delete allianttemp if it exists
     win_user:
         name: allianttemp
         state: absent
