@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Delete accounts if they exist
+    win_user:
+        name: allianttech
+        state: absent
+    win_user:
+        name: allianttemp
+        state: absent
