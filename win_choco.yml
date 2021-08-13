@@ -1,0 +1,11 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Ensure Choco is installed
+    win_chocolatey:
+        name: chocolatey
+  - name: Upgrade all installed packages
+    win_chocolatey:
+        name: all
+        state: latest
