@@ -1,0 +1,6 @@
+---
+- hosts: all
+  gather_facts: no
+  tasks:
+  - name: Run shell command
+    win_shell: "{{ command }}"
