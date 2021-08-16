@@ -9,6 +9,6 @@
     win_chocolatey:
         name: all
         state: latest
-        register: choco_out
+    register: choco_out
   - debug:
         var: choco_out.stdout_lines
