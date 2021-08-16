@@ -10,5 +10,4 @@
         name: all
         state: latest
     register: choco_out
-  - debug:
-        var: choco_out.stdout_lines
+  - debug: var=choco_out.stdout_lines
